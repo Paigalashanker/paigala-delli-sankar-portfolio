@@ -63,7 +63,8 @@ function updateThemeButton(theme){
   if (!tbtn) return;
   tbtn.textContent = theme === 'dark' ? 'Light' : 'Dark';
 }
-// ...existing code...document.addEventListener('DOMContentLoaded', () => {
+
+document.addEventListener('DOMContentLoaded', () => {
     initProjects();
     initContactForm();
     setActiveNav();
