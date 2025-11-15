@@ -1,44 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paigala Delli Sankar - Portfolio</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/components/header.css">
-    <link rel="stylesheet" href="css/components/footer.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PAIGALA DELLI SANKAR — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">PAIGALA DELLI SANKAR</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">⛅</button>
+    </div>
+  </header>
 
-    <main>
-        <section id="introduction">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hi, I'm Paigala Delli Sankar, a passionate developer and designer.</p>
-        </section>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 class="slide-in">PAIGALA DELLI SANKAR</h1>
+          <p class="lead fade-in">Aspiring Full-Stack Developer | Cybersecurity &amp; AI Enthusiast</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="resume.pdf" download>Download Resume</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-card float-card">
+          <div class="avatar">PDS</div>
+          <p class="muted">1st-year Engineering student — Fresher</p>
+        </div>
+      </div>
+    </section>
 
-        <section id="featured-projects">
-            <h2>Featured Projects</h2>
-            <div class="project-list">
-                <!-- Project items will be dynamically loaded here -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p>I am a 1st-year engineering student interested in full-stack development, AI/ML, and cybersecurity. Passionate about backend/server-side logic and building dependable systems.</p>
+        <ul class="meta">
+          <li><strong>Email:</strong> <a href="mailto:paigalashanker@gmail.com">paigalashanker@gmail.com</a></li>
+          <li><strong>Experience:</strong> Fresher</li>
+          <li><strong>Location:</strong> (Add your city)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <!-- skill cards -->
+          <div class="skill-card" data-level="90"><h3>C Programming</h3><div class="bar"><div class="fill" style="width:0%"></div></div></div>
+          <div class="skill-card" data-level="85"><h3>Python</h3><div class="bar"><div class="fill" style="width:0%"></div></div></div>
+          <div class="skill-card" data-level="70"><h3>Java</h3><div class="bar"><div class="fill" style="width:0%"></div></div></div>
+          <div class="skill-card" data-level="50"><h3>JavaScript (learning)</h3><div class="bar"><div class="fill" style="width:0%"></div></div></div>
+          <div class="skill-card" data-level="75"><h3>Linux</h3><div class="bar"><div class="fill" style="width:0%"></div></div></div>
+          <div class="skill-card" data-level="65"><h3>SQL</h3><div class="bar"><div class="fill" style="width:0%"></div></div></div>
+          <div class="skill-card" data-level="80"><h3>Git &amp; GitHub</h3><div class="bar"><div class="fill" style="width:0%"></div></div></div>
+          <div class="skill-card" data-level="60"><h3>Networking basics</h3><div class="bar"><div class="fill" style="width:0%"></div></div></div>
+          <div class="skill-card" data-level="55"><h3>Cybersecurity fundamentals</h3><div class="bar"><div class="fill" style="width:0%"></div></div></div>
+          <div class="skill-card" data-level="50"><h3>Data Structures (learning)</h3><div class="bar"><div class="fill" style="width:0%"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+          <article class="project-card animated-card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio showcasing skills, projects and contact info. Responsive and theme-aware.</p>
+            <p class="tech">Tech: HTML · CSS · JS</p>
+            <div class="proj-actions">
+              <a class="btn ghost" href="#" target="_blank" rel="noopener">View</a>
+              <a class="btn" href="https://github.com/paigalashanker/portfolio" target="_blank" rel="noopener">GitHub</a>
             </div>
-        </section>
-    </main>
+          </article>
 
-    <footer>
-        <p>&copy; 2022 Paigala Delli Sankar. All rights reserved.</p>
-    </footer>
+          <article class="project-card animated-card">
+            <h3>Offline LLM on Android</h3>
+            <p>Experiment: TinyLlama / Ollama in Termux setup for local inference on Android devices.</p>
+            <p class="tech">Tech: Linux · Termux · Python</p>
+            <div class="proj-actions">
+              <a class="btn ghost" href="#" target="_blank" rel="noopener">Read</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
 
-    <script src="js/main.js"></script>
+          <article class="project-card animated-card">
+            <h3>Future Projects</h3>
+            <p>Placeholder for upcoming projects — web apps, APIs, and AI experiments.</p>
+            <p class="tech">Tech: TBD</p>
+            <div class="proj-actions">
+              <a class="btn ghost" href="#" target="_blank" rel="noopener">TBD</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <p>Currently building foundational skills in software development, server-side logic and security concepts. Open to internships and collaborative projects.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form" novalidate>
+            <label>
+              <span>Name</span>
+              <input name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Send</button>
+              <button type="reset" class="btn ghost">Reset</button>
+            </div>
+            <div id="contact-status" aria-live="polite"></div>
+          </form>
+
+          <aside class="contact-info">
+            <p><strong>Email</strong><br><a href="mailto:paigalashanker@gmail.com">paigalashanker@gmail.com</a></p>
+            <p><strong>GitHub</strong><br><a href="https://github.com/paigalashanker" target="_blank" rel="noopener">github.com/paigalashanker</a></p>
+            <p><strong>LinkedIn</strong><br><em>placeholder</em></p>
+            <p><strong>Instagram</strong><br><em>placeholder</em></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> PAIGALA DELLI SANKAR — Built with HTML · CSS · JS</p>
+    </div>
+  </footer>
+
+  <!-- Floating buttons -->
+  <div class="fab-group" aria-hidden="false">
+    <button class="fab primary" data-target="#about" title="About" aria-label="About">A</button>
+    <button class="fab" data-target="#projects" title="Projects" aria-label="Projects">P</button>
+    <button class="fab" data-target="#contact" title="Contact" aria-label="Contact">C</button>
+    <button class="fab back-top" id="backTop" title="Back to top" aria-label="Back to top">↑</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
